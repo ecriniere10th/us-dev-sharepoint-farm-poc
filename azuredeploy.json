@@ -78,7 +78,7 @@
         "group": "Infrastructure settings",
         "description": "Change this value to your repo name if deploying from a fork"
       },
-      "defaultValue": "https://raw.githubusercontent.com/ecriniere10th/sharepoint-server-farm-ha/master"
+      "defaultValue": "https://raw.githubusercontent.com/ecriniere10th/us-dev-sharepoint-farm-poc/master"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
