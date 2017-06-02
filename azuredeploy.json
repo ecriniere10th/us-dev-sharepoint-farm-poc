@@ -948,8 +948,7 @@
       "name": "ConfiguringSQLAlwaysOnCluster",
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2015-01-01",
-      "dependsOn": [
-        "Microsoft.Resources/deployments/UpdatingDNSwithBackupADVM",
+      "dependsOn": [        
         "Microsoft.Resources/deployments/ProvisioningSQLVirtualMachines"
       ],
       "properties": {
