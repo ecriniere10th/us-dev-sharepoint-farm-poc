@@ -8,7 +8,7 @@
         "group": "basics",
         "description": "The name of the SharePoint farm"
       },
-      "defaultValue": "spdevfarm"
+      "defaultValue": "usedazspfarm"
     },
     "location": {
       "type": "string",
@@ -37,7 +37,8 @@
       "metadata": {
         "group": "Infrastructure settings",
         "description": "The prefix of the new storage account created to store the VM disks. Different storage accounts will be created for AD, SQL, and SharePoint VMs."
-      }
+      },
+      "defaultValue": "usedazspstg"
     },
     "storageAccountType": {
       "type": "string",
@@ -49,7 +50,7 @@
     },
     "virtualNetworkName": {
       "type": "string",
-      "defaultValue": "spdevfarmVNET",
+      "defaultValue": "usedazspVNET",
       "metadata": {
         "group": "Infrastructure settings",
         "description": "Name of virtual network to be created"
@@ -87,14 +88,14 @@
         "artifactsLocationSasToken": ""
       },
       "defaultValue": ""
-    },    
+    },
     "domainName": {
       "type": "string",
       "metadata": {
         "group": "Active Directory settings",
         "description": "The FQDN of the AD Domain created "
       },
-      "defaultValue": "spdevfarm.local"
+      "defaultValue": "usedazsp.com"
     },
     "adVMSize": {
       "type": "string",
@@ -126,7 +127,7 @@
         "group": "SQL Server settings",
         "description": "The size of the SQL VMs created"
       },
-      "defaultValue": "Standard_DS3_V2"
+      "defaultValue": "Standard_DS13_V2"
     },
     "witnessVMSize": {
       "type": "string",
@@ -223,7 +224,7 @@
         "group": "SharePoint Server settings",
         "description": "The size of the SP VMs Created"
       },
-      "defaultValue": "Standard_DS2_V2"
+      "defaultValue": "Standard_DS13_V2"
     },
     "sharePointSetupUserAccountUserName": {
       "type": "string",
@@ -311,8 +312,8 @@
         "spWebAvailabilitySetName": "spWebAvailabilitySet",
         "spAppAvailabilitySetName": "spAppAvailabilitySet"
       },
-      "noOfSqlVMs": 2,
-      "noOfspRoleVMs": 2,
+      "noOfSqlVMs": 1,
+      "noOfspRoleVMs": 1,
       "vmContainerName": "vhds",
       "adPDCVMName": "ad-pdc",
       "adBDCVMName": "ad-bdc",
