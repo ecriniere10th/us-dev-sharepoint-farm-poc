@@ -209,14 +209,16 @@
       "metadata": {
         "group": "SharePoint Server settings",
         "description": "The new or existing - depending on value of spWebIPNewOrExisting parameter - IP address name for SP Web "
-      }
+      },
+      "defaultValue": "usedazsppip"
     },
     "dnsPrefix": {
       "type": "string",
       "metadata": {
         "group": "SharePoint Server settings",
         "description": "The DNS Prefix for the Public IP Address for the Sharepoint Web Application"
-      }
+      },
+      "defaultValue": "usedazspfarm"
     },
     "spVMSize": {
       "type": "string",
