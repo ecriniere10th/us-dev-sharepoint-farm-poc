@@ -6,7 +6,7 @@
       "type": "string",
       "metadata": {
         "group": "basics",
-        "description": "The name of the SharePoint farm"
+        "description": "Name of the SharePoint farm"
       },
       "defaultValue": "usedazspfarm"
     },
